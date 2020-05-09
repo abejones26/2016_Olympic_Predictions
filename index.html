@@ -13,14 +13,14 @@
 
   <!-- Custom fonts for this template-->
 
-  <link href="{{ url_for('static', filename='vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet"
+  <link href="static/vendor/fontawesome-free/css/all.min.css" rel="stylesheet"
     type="text/css">
   <link
     href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
     rel="stylesheet">
 
   <!-- Custom styles for this template-->
-  <link href="{{ url_for('static', filename='css/sb-admin-2.min.css') }}" rel="stylesheet">
+  <link href="static/css/sb-admin-2.min.css" rel="stylesheet">
 
 </head>
 
@@ -36,7 +36,7 @@
         <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
           <a class="navbar-brand" href="/">2016 Olympic Predictions - Who will win a medal?</a>
           <span class="navbar-text float-right">
-            Data Team: Tanisha Blakely, Jimmy Heinz III, Abe Jones, Dharti Patel, Alap Raval
+            Team Southsiders: Tanisha Blakely, Jimmy Heinz III, Abe Jones, Dharti Patel, Alap Raval
           </span>
         </nav>
         <!-- End of Topbar -->
@@ -62,7 +62,7 @@
 
                   <p><b>Data Source:</b><br>
                     <a
-                      href="https://www.kaggle.com/pavanraj159/olympics-history-1896-2016/data">https://www.kaggle.com/pavanraj159/olympics-history-1896-2016/data</a><br>
+                      href="https://www.kaggle.com/pavanraj159/olympics-history-1896-2016/data" target="_blank">https://www.kaggle.com/pavanraj159/olympics-history-1896-2016/data</a><br>
                     <a
                       href="https://abe-southside-final-project.s3.us-east-2.amazonaws.com/athlete_events.csv">https://abe-southside-final-project.s3.us-east-2.amazonaws.com/athlete_events.csv</a>
 
@@ -79,7 +79,7 @@
                   <h6 class="m-0 font-weight-bold text-primary">NULL Heatmap</h6>
                 </div>
                 <div class="card-body">
-                  <img class="card-img-top" src="/static/img/NA_Heatmap.jpg" alt="CEO Exits by Industry">
+                  <img class="card-img-top" src="static/img/NA_Heatmap.jpg" alt="CEO Exits by Industry">
 
                   <hr>
                   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal-1">
@@ -95,7 +95,7 @@
                   <h6 class="m-0 font-weight-bold text-primary">NOT NULL Heatmap</h6>
                 </div>
                 <div class="card-body">
-                  <img class="card-img-top" src="/static/img/Clean_Heatmap.jpg" alt="Stock Performance">
+                  <img class="card-img-top" src="static/img/Clean_Heatmap.jpg" alt="Stock Performance">
 
                   <hr>
                   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal-2">
@@ -111,7 +111,7 @@
                   <h6 class="m-0 font-weight-bold text-primary">BMI by Weight</h6>
                 </div>
                 <div class="card-body">
-                  <img class="card-img-top" src="/static/img/BMI_Weight.jpg" alt="Stock Performance">
+                  <img class="card-img-top" src="static/img/BMI_Weight.jpg" alt="Stock Performance">
 
                   <hr>
                   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal-3">
@@ -127,7 +127,7 @@
                   <h6 class="m-0 font-weight-bold text-primary">BMI by Height</h6>
                 </div>
                 <div class="card-body">
-                  <img class="card-img-top" src="/static/img/BMI_Height.jpg" alt="Stock Performance">
+                  <img class="card-img-top" src="static/img/BMI_Height.jpg" alt="Stock Performance">
 
                   <hr>
                   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal-4">
@@ -143,7 +143,7 @@
                   <h6 class="m-0 font-weight-bold text-primary">BMI by Age</h6>
                 </div>
                 <div class="card-body">
-                  <img class="card-img-top" src="/static/img/BMI_Age.jpg" alt="Stock Performance">
+                  <img class="card-img-top" src="static/img/BMI_Age.jpg" alt="Stock Performance">
 
                   <hr>
                   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal-5">
@@ -159,7 +159,7 @@
                   <h6 class="m-0 font-weight-bold text-primary">Medal by BMI</h6>
                 </div>
                 <div class="card-body">
-                  <img class="card-img-top" src="/static/img/Medal_BMI.jpg" alt="Stock Performance">
+                  <img class="card-img-top" src="static/img/Medal_BMI.jpg" alt="Stock Performance">
 
                   <hr>
                   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal-6">
@@ -175,7 +175,7 @@
                   <h6 class="m-0 font-weight-bold text-primary">Logistic Regression Crosstab</h6>
                 </div>
                 <div class="card-body">
-                  <img class="card-img-top" src="/static/img/LR_Crosstab_heatmap.jpg" alt="Stock Performance">
+                  <img class="card-img-top" src="static/img/LR_Crosstab_heatmap.jpg" alt="Stock Performance">
 
                   <hr>
                   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal-7">
@@ -559,11 +559,11 @@
   </div>
 
   <!-- Bootstrap core JavaScript-->
-  <script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js') }}"></script>
-  <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+  <script src="static/vendor/jquery/jquery.min.js"></script>
+  <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- Core plugin JavaScript-->
-  <script src="{{ url_for('static', filename='vendor/jquery-easing/jquery.easing.min.js') }}"></script>
+  <script src="static/vendor/jquery-easing/jquery.easing.min.js"></script>
 
 </body>
 
