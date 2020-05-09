@@ -12,14 +12,5 @@ app = Flask(__name__)
 def index():
     return render_template("index.html", text="Serving up cool text from the Flask server!!")
 
-@app.route("/industry")
-def industry():
-    return render_template("industry.html", text="industry page")
-
-@app.route("/stock-index")
-def stocks():
-    return render_template("stock-index.html", text="industry page")
-  
-
 if __name__ == "__main__":
     app.run(debug=True, extra_files='index.html')
