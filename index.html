@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>2016 Olympics Predictions</title>
+
+  <!-- Custom fonts for this template-->
+
+  <link href="static/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link
+    href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+    rel="stylesheet">
+
+  <!-- Custom styles for this template-->
+  <link href="static/css/sb-admin-2.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+      <!-- Main Content -->
+      <div id="content">
+        <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+          <a class="navbar-brand" href="/">2016 Olympics Predictions - Who will win a medal?</a>
+
+        </nav>
+        <!-- End of Topbar -->
+
+        <!-- Begin Page Content -->
+        <div class="container-fluid">
+
+          <!-- Content Row -->
+          <div class="row">
+            <!-- Content Column -->
+            <div class="col-lg-12 mb-4">
+
+              <!-- Approach -->
+              <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                  <h5 class="m-0 font-weight-bold text-primary">Project Overview</h5>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">Based on athlete data from the Olympic games between 1896-2014, we created a
+                    machine learning model
+                    to predict who would win a medal in the RIO 2016 Olympic Games.</p>
+                  <div class="row">
+                    <div class="col-lg-8">
+                      <h6 class="card-title text-primary">Tech Stack</h6>
+                      <ul>
+                        <li>Scikit-Learn library for creating ML model for our prediction.</ol>
+                        <li>Amazon AWS S3 to host our Olympic athlete's dataset from Kaggle.</ol>
+                        <li>Python Pandas and Matplotlib libraries for data manipulation and ploting.</ol>
+                        <li>HTML/CSS/Bootstrap for creating web page with our visualizations.</ol>
+                      </ul>
+
+                      <h6 class="card-title text-primary">Data Source</h6>
+
+                      <ul>
+                        <li><a href="https://www.kaggle.com/pavanraj159/olympics-history-1896-2016/data"
+                            target="_blank">https://www.kaggle.com/pavanraj159/olympics-history-1896-2016/data</a></li>
+                        <li><a
+                            href="https://abe-southside-final-project.s3.us-east-2.amazonaws.com/athlete_events.csv">https://abe-southside-final-project.s3.us-east-2.amazonaws.com/athlete_events.csv</a>
+                        </li>
+                      </ul>
+                      <h6 class="card-title text-primary">Team Southsiders</h6>
+                      <ul>
+                        <li>Tanisha Blakely</li>
+                        <li>Jimmy Heinz III</li>
+                        <li>Abe Jones</li>
+                        <li>Dharti Patel</li>
+                        <li>Alap Raval</li>
+                      </ul>
+                    </div>
+
+                    <div class="col-lg-4">
+                      <img class="img-thumbnail rounded mx-auto d-block" src="static/img/LR_Crosstab_heatmap.jpg" alt="Stock Performance">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-lg-6 mb-4">
+
+              <!-- Industry Illustration COPY-->
+              <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary">NULL Heatmap</h6>
+                </div>
+                <div class="card-body">
+                  <img class="card-img-top" src="static/img/NA_Heatmap.jpg" alt="CEO Exits by Industry">
+
+                  <hr>
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal-1">
+                    View Code
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 mb-4">
+              <!-- Stock Market Illustration -->
+              <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary">NOT NULL Heatmap</h6>
+                </div>
+                <div class="card-body">
+                  <img class="card-img-top" src="static/img/Clean_Heatmap.jpg" alt="Stock Performance">
+
+                  <hr>
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal-2">
+                    View Code
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 mb-4">
+              <!-- Stock Market Illustration -->
+              <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary">BMI by Weight</h6>
+                </div>
+                <div class="card-body">
+                  <img class="card-img-top" src="static/img/BMI_Weight.jpg" alt="Stock Performance">
+
+                  <hr>
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal-3">
+                    View Code
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 mb-4">
+              <!-- Stock Market Illustration -->
+              <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary">BMI by Height</h6>
+                </div>
+                <div class="card-body">
+                  <img class="card-img-top" src="static/img/BMI_Height.jpg" alt="Stock Performance">
+
+                  <hr>
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal-4">
+                    View Code
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 mb-4">
+              <!-- Stock Market Illustration -->
+              <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary">BMI by Age</h6>
+                </div>
+                <div class="card-body">
+                  <img class="card-img-top" src="static/img/BMI_Age.jpg" alt="Stock Performance">
+
+                  <hr>
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal-5">
+                    View Code
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 mb-4">
+              <!-- Stock Market Illustration -->
+              <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary">Medal by BMI</h6>
+                </div>
+                <div class="card-body">
+                  <img class="card-img-top" src="static/img/Medal_BMI.jpg" alt="Stock Performance">
+
+                  <hr>
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal-6">
+                    View Code
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 mb-4">
+              <!-- Stock Market Illustration -->
+              <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary">Logistic Regression Crosstab</h6>
+                </div>
+                <div class="card-body">
+                  <img class="card-img-top" src="static/img/LR_Crosstab_heatmap.jpg" alt="Stock Performance">
+
+                  <hr>
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal-7">
+                    View Code
+                  </button>
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+
+        </div>
+        <!-- /.container-fluid -->
+
+      </div>
+      <!-- End of Main Content -->
+
+      <!-- Footer -->
+      <footer class="sticky-footer bg-white">
+        <div class="container my-auto">
+          <div class="copyright text-center my-auto">
+            <span>Copyright &copy; Team SouthSiders 2019-2020</span>
+          </div>
+        </div>
+      </footer>
+      <!-- End of Footer -->
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+  </div>
+  <!-- End of Page Wrapper -->
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  </div>
+  <!-- Modal -->
+  <div class="modal fade bd-example-modal-lg" id="Modal-1" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Heatmap to highlight Null values</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <code>
+            %matplotlib inline <br>
+            import matplotlib.pyplot as plt <br>
+            import pandas as pd <br>
+            import seaborn as sns <br><br>
+
+            olympics = pd.read_csv("https://abe-southside-final-project.s3.us-east-2.amazonaws.com/athlete_events.csv",index_col=[0]) <br><br>
+            sns.heatmap(olympics.isnull()) <br>
+            plt.title("Feature Statistics")
+          </code>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade bd-example-modal-lg" id="Modal-2" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Heatmap to highlight NOT Null values</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <code>
+            %matplotlib inline <br>
+            import matplotlib.pyplot as plt <br>
+            import pandas as pd <br>
+            import seaborn as sns <br><br>
+
+            olympics = pd.read_csv("https://abe-southside-final-project.s3.us-east-2.amazonaws.com/athlete_events.csv",index_col=[0]) <br><br>
+            countries = ['USA','BRA','GER','AUS','FRA'] <br>
+            sports = ['Athletics'] <br><br>
+
+            olympics = olympics[olympics['NOC'].isin(countries)] <br>
+            olympics = olympics[olympics['Season'] == 'Summer'] <br>
+            olympics = olympics[olympics['Height'].notna()] <br>
+            olympics = olympics[olympics['Age'].notna()] <br>
+            olympics['Height (m)'] = olympics['Height']/100 <br>
+            olympics = olympics[olympics['Weight'].notna()] <br>
+            olympics['BMI'] = round(olympics['Weight']/(olympics['Height (m)']*olympics['Height (m)']),2) <br><br>
+            olympics.loc[(olympics['Medal'] == 'Gold'),'Medal']='Medal' <br>
+            olympics.loc[(olympics['Medal'] == 'Silver'),'Medal']='Medal' <br>
+            olympics.loc[(olympics['Medal'] == 'Bronze'),'Medal']='Medal' <br>
+            olympics.loc[(olympics['Medal'].isna()),'Medal']= 'Non-Medal' <br>
+
+            olympics_df = olympics[olympics['Year']< 2016] <br>
+            olympics_2016 = olympics[olympics['Year'] == 2016] <br><br>
+
+            sns.heatmap(olympics.isnull()) <br>
+            plt.title("Feature Statistics with no nulls")
+          </code>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade bd-example-modal-lg" id="Modal-3" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Reviewing BMI by Weight to identify correlation</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <code>
+            %matplotlib inline <br>
+            import matplotlib.pyplot as plt <br>
+            import pandas as pd <br>
+            import seaborn as sns <br><br>
+
+            olympics = pd.read_csv("https://abe-southside-final-project.s3.us-east-2.amazonaws.com/athlete_events.csv",index_col=[0]) <br><br>
+            countries = ['USA','BRA','GER','AUS','FRA'] <br>
+            sports = ['Athletics'] <br><br>
+
+            olympics = olympics[olympics['NOC'].isin(countries)] <br>
+            olympics = olympics[olympics['Season'] == 'Summer'] <br>
+            olympics = olympics[olympics['Height'].notna()] <br>
+            olympics = olympics[olympics['Age'].notna()] <br>
+            olympics['Height (m)'] = olympics['Height']/100 <br>
+            olympics = olympics[olympics['Weight'].notna()] <br>
+            olympics['BMI'] = round(olympics['Weight']/(olympics['Height (m)']*olympics['Height (m)']),2) <br><br>
+            olympics.loc[(olympics['Medal'] == 'Gold'),'Medal']='Medal' <br>
+            olympics.loc[(olympics['Medal'] == 'Silver'),'Medal']='Medal' <br>
+            olympics.loc[(olympics['Medal'] == 'Bronze'),'Medal']='Medal' <br>
+            olympics.loc[(olympics['Medal'].isna()),'Medal']= 'Non-Medal' <br>
+
+            olympics_df = olympics[olympics['Year']< 2016] <br>
+            # olympics_2016 = olympics[olympics['Year'] == 2016] <br><br>
+
+            W = olympics_df['Weight'] <br>
+            B = olympics_df['BMI'] <br><br>
+            
+            plt.scatter(B,W,c="blue") <br>
+            plt.xlabel("BMI") <br>
+            plt.ylabel("Weight") <br>
+            plt.title("BMI by Weight")
+          </code>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade bd-example-modal-lg" id="Modal-4" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Reviewing BMI by Height to identify correlation</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <code>
+            %matplotlib inline <br>
+            import matplotlib.pyplot as plt <br>
+            import pandas as pd <br>
+            import seaborn as sns <br><br>
+
+            olympics = pd.read_csv("https://abe-southside-final-project.s3.us-east-2.amazonaws.com/athlete_events.csv",index_col=[0]) <br><br>
+            countries = ['USA','BRA','GER','AUS','FRA'] <br>
+            sports = ['Athletics'] <br><br>
+
+            olympics = olympics[olympics['NOC'].isin(countries)] <br>
+            olympics = olympics[olympics['Season'] == 'Summer'] <br>
+            olympics = olympics[olympics['Height'].notna()] <br>
+            olympics = olympics[olympics['Age'].notna()] <br>
+            olympics['Height (m)'] = olympics['Height']/100 <br>
+            olympics = olympics[olympics['Weight'].notna()] <br>
+            olympics['BMI'] = round(olympics['Weight']/(olympics['Height (m)']*olympics['Height (m)']),2) <br><br>
+            olympics.loc[(olympics['Medal'] == 'Gold'),'Medal']='Medal' <br>
+            olympics.loc[(olympics['Medal'] == 'Silver'),'Medal']='Medal' <br>
+            olympics.loc[(olympics['Medal'] == 'Bronze'),'Medal']='Medal' <br>
+            olympics.loc[(olympics['Medal'].isna()),'Medal']= 'Non-Medal' <br>
+
+            olympics_df = olympics[olympics['Year']< 2016] <br>
+            # olympics_2016 = olympics[olympics['Year'] == 2016] <br><br>
+
+            H = olympics_df['Height (m)'] <br>
+            B = olympics_df['BMI'] <br><br>
+            
+            plt.scatter(B,H,c="red") <br>
+            plt.xlabel("BMI") <br>
+            plt.ylabel("Height (m)") <br>
+            plt.title("BMI by Height")
+          </code>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade bd-example-modal-lg" id="Modal-5" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Reviewing BMI by Age to identify correlation</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <code>
+            %matplotlib inline <br>
+            import matplotlib.pyplot as plt <br>
+            import pandas as pd <br>
+            import seaborn as sns <br><br>
+
+            olympics = pd.read_csv("https://abe-southside-final-project.s3.us-east-2.amazonaws.com/athlete_events.csv",index_col=[0]) <br><br>
+            countries = ['USA','BRA','GER','AUS','FRA'] <br>
+            sports = ['Athletics'] <br><br>
+
+            olympics = olympics[olympics['NOC'].isin(countries)] <br>
+            olympics = olympics[olympics['Season'] == 'Summer'] <br>
+            olympics = olympics[olympics['Height'].notna()] <br>
+            olympics = olympics[olympics['Age'].notna()] <br>
+            olympics['Height (m)'] = olympics['Height']/100 <br>
+            olympics = olympics[olympics['Weight'].notna()] <br>
+            olympics['BMI'] = round(olympics['Weight']/(olympics['Height (m)']*olympics['Height (m)']),2) <br><br>
+            olympics.loc[(olympics['Medal'] == 'Gold'),'Medal']='Medal' <br>
+            olympics.loc[(olympics['Medal'] == 'Silver'),'Medal']='Medal' <br>
+            olympics.loc[(olympics['Medal'] == 'Bronze'),'Medal']='Medal' <br>
+            olympics.loc[(olympics['Medal'].isna()),'Medal']= 'Non-Medal' <br>
+
+            olympics_df = olympics[olympics['Year']< 2016] <br>
+            # olympics_2016 = olympics[olympics['Year'] == 2016] <br><br>
+
+            A = olympics_df['Age']<br>
+            B = olympics_df['BMI']<br><br>
+            
+            plt.scatter(B,A,c="green")<br>
+            plt.xlabel("BMI")<br>
+            plt.ylabel("Age")<br>
+            plt.title("BMI by Age")
+          </code>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Modal -->
+  <div class="modal fade bd-example-modal-lg" id="Modal-6" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Reviewing Medal by BMI to identify correlation</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <code>
+            %matplotlib inline <br>
+            import matplotlib.pyplot as plt <br>
+            import pandas as pd <br>
+            import seaborn as sns <br><br>
+
+            olympics = pd.read_csv("https://abe-southside-final-project.s3.us-east-2.amazonaws.com/athlete_events.csv",index_col=[0]) <br><br>
+            countries = ['USA','BRA','GER','AUS','FRA'] <br>
+            sports = ['Athletics'] <br><br>
+
+            olympics = olympics[olympics['NOC'].isin(countries)] <br>
+            olympics = olympics[olympics['Season'] == 'Summer'] <br>
+            olympics = olympics[olympics['Height'].notna()] <br>
+            olympics = olympics[olympics['Age'].notna()] <br>
+            olympics['Height (m)'] = olympics['Height']/100 <br>
+            olympics = olympics[olympics['Weight'].notna()] <br>
+            olympics['BMI'] = round(olympics['Weight']/(olympics['Height (m)']*olympics['Height (m)']),2) <br><br>
+            olympics.loc[(olympics['Medal'] == 'Gold'),'Medal']='Medal' <br>
+            olympics.loc[(olympics['Medal'] == 'Silver'),'Medal']='Medal' <br>
+            olympics.loc[(olympics['Medal'] == 'Bronze'),'Medal']='Medal' <br>
+            olympics.loc[(olympics['Medal'].isna()),'Medal']= 'Non-Medal' <br>
+
+            olympics_df = olympics[olympics['Year']< 2016] <br>
+            # olympics_2016 = olympics[olympics['Year'] == 2016] <br><br>
+
+            M = olympics_df['Medal']<br>
+            B = olympics_df['BMI'] <br><br>
+            
+            plt.scatter(B,M,c="purple")<br>
+            plt.xlabel("BMI")<br>
+            plt.ylabel("Medal")<br>
+            plt.title("Medal by BMI")
+          </code>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Modal -->
+  <div class="modal fade bd-example-modal-lg" id="Modal-7" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Logistic Regression</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <code>
+            %matplotlib inline<br>
+            import matplotlib.pyplot as plt<br>
+            import pandas as pd<br><br>
+
+            import seaborn as sns<br><br>
+                        
+            from sklearn.model_selection import train_test_split<br>
+            from sklearn.linear_model import LogisticRegression<br><br>
+
+            X = pd.get_dummies(olympics_df[["Sex", "Age", "Height", "Weight","BMI","NOC"]])<br>
+            y = olympics_df["Medal"]<br><br>
+            
+            X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=42)<br><br>
+
+            X_2016 = pd.get_dummies(olympics_2016[["Sex", "Age", "Height", "Weight","BMI","NOC"]])<br>
+            y_2016 = olympics_2016["Medal"]<br><br>
+
+            classifier = LogisticRegression()<br>
+            classifier.fit(X_train, y_train)<br><br>
+            
+            predictions = classifier.predict(X_2016)<br><br>
+
+            Testing = pd.DataFrame({"Prediction": predictions, "Actual": y_2016}).reset_index(drop=True)<br><br>
+
+            Testing_crosstab = pd.crosstab(Testing['Actual'],Testing['Prediction'])<br><br>
+
+            lr_heatmap = sns.heatmap(Testing_crosstab, cmap="YlGnBu", annot=True, cbar=True, annot_kws = {'ha': 'center','va': 'center'})<br>
+            bottom, top = lr_heatmap.get_ylim()<br>
+            lr_heatmap.set_ylim(bottom + 0.5, top - 0.5)<br>
+            plt.title("Logistic Regression Crosstab")
+          </code>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="static/vendor/jquery/jquery.min.js"></script>
+  <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="static/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+</body>
+
+</html>
