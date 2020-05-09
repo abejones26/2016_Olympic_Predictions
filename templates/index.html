@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>CEO Turnover Report</title>
+
+  <!-- Custom fonts for this template-->
+
+  <link href="{{ url_for('static', filename='vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet"
+    type="text/css">
+  <link
+    href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+    rel="stylesheet">
+
+  <!-- Custom styles for this template-->
+  <link href="{{ url_for('static', filename='css/sb-admin-2.min.css') }}" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+      <!-- Main Content -->
+      <div id="content">
+        <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+          <a class="navbar-brand" href="/">CEO Turnover Report</a>
+          <span class="navbar-text float-right">
+            Data Team: Tanisha Blakely, Abe Jones, Dharti Patel, Alap Raval
+          </span>
+        </nav>
+        <!-- End of Topbar -->
+
+        <!-- Begin Page Content -->
+        <div class="container-fluid">
+
+          <!-- Page Heading -->
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h4 class="h4 mb-0 text-gray-800">CEO Exits Analysis</h4>
+          </div>
+
+          <!-- Content Row -->
+          <div class="row">
+            <!-- Years Card Example -->
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-primary shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Years</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800">5</div>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- CEO Exits Card Example -->
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-success shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Total CEO Exits</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800">6,721</div>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Industry Card Example -->
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-success shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Industries</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800">30</div>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Highest Industry Card Example -->
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-warning shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Highest Industry Exits
+                      </div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800">Government/Non-Profit</div>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Content Row -->
+          <div class="row">
+            <!-- Content Column -->
+            <div class="col-lg-6 mb-4">
+
+              <!-- Industry Illustration COPY-->
+              <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary">NULL Heatmap</h6>
+                </div>
+                <div class="card-body">
+                  <img class="card-img-top" src="/static/img/NA_Heatmap.png" alt="CEO Exits by Industry">
+
+                  <hr>
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal-1">
+                    View Code
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 mb-4">
+              <!-- Stock Market Illustration -->
+              <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary">NOT NULL Heatmap</h6>
+                </div>
+                <div class="card-body">
+                  <img class="card-img-top" src="/static/img/Clean_Heatmap.png" alt="Stock Performance">
+
+                  <hr>
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal-2">
+                    View Code
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 mb-4">
+              <!-- Stock Market Illustration -->
+              <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary">BMI by Weight</h6>
+                </div>
+                <div class="card-body">
+                  <img class="card-img-top" src="/static/img/BMI_Weight.png" alt="Stock Performance">
+
+                  <hr>
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal-3">
+                    View Code
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 mb-4">
+              <!-- Stock Market Illustration -->
+              <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary">BMI by Height</h6>
+                </div>
+                <div class="card-body">
+                  <img class="card-img-top" src="/static/img/BMI_Height.png" alt="Stock Performance">
+
+                  <hr>
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal-4">
+                    View Code
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 mb-4">
+              <!-- Stock Market Illustration -->
+              <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary">BMI by Age</h6>
+                </div>
+                <div class="card-body">
+                  <img class="card-img-top" src="/static/img/BMI_Age.png" alt="Stock Performance">
+
+                  <hr>
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal-5">
+                    View Code
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 mb-4">
+              <!-- Stock Market Illustration -->
+              <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary">Medal by BMI</h6>
+                </div>
+                <div class="card-body">
+                  <img class="card-img-top" src="/static/img/Medal_BMI.png" alt="Stock Performance">
+
+                  <hr>
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal-6">
+                    View Code
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 mb-4">
+              <!-- Stock Market Illustration -->
+              <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary">Logistic Regression Crosstab</h6>
+                </div>
+                <div class="card-body">
+                  <img class="card-img-top" src="/static/img/LR_Crosstab_heatmap.png" alt="Stock Performance">
+
+                  <hr>
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal-7">
+                    View Code
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-12 mb-4">
+
+              <!-- Approach -->
+              <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary">Report Summary</h6>
+                </div>
+                <div class="card-body">
+                  <p>In 2019 there was a record number of CEOs who stepped down from their companies.</p>
+
+                  <p>Chief Executive Officer turnover jumped 8%, from 148 in November to 160 in December, the
+                    second-highest monthly total since <a
+                      href="http://www.challengergray.com/press/press-releases/2019-year-end-ceo-report-160-ceos-out-december-highest-annual-quarterly-totals"
+                      target="_blank">Challenger, Gray & Christmas</a>
+                    began tracking CEO departures in 2002.</p>
+
+                  <p>According to the Challenger CEO Turnover Report, the Government/Non-Profit sector leads all
+                    industries in CEO turnover with 339 in 2019. That is 22.8% more than the 276 chief executives who
+                    left their positions the previous year. These companies include government agencies, tourism and
+                    transportation authorities, Chambers of Commerce, education companies, charities, and foundations.
+                  </p>
+
+                  <p>The Technology sector follows with 216 CEO changes, up 42% from the 152 announced in 2018.
+                    Financial companies have announced the third-highest number of CEO changes with 129, down 16% from
+                    the 154 Financial sector CEOs who left in 2018.</p>
+
+                  <p>Hospitals announced 121 CEO changes last year, down 12.9% from the 139 who left their posts through
+                    the same period the year prior.</p>
+
+                  <p>Eleven chief executives from the budding cannabis industry left their posts in 2019, the first year
+                    Challenger tracked the industry.</p>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-lg-12 mb-4">
+              <div id="d3BarChart" class="card shadow mb-4">
+                <!-- Card Header - Dropdown -->
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                  <h6 class="m-0 font-weight-bold text-primary">Overview</h6>
+                  <div class="dropdown no-arrow"></div>
+                </div>
+                <!-- Card Body -->
+                <div class="card-body">
+                  <div class="chart-area"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- /.container-fluid -->
+
+      </div>
+      <!-- End of Main Content -->
+
+      <!-- Footer -->
+      <footer class="sticky-footer bg-white">
+        <div class="container my-auto">
+          <div class="copyright text-center my-auto">
+            <span>Copyright &copy; Team SouthSiders 2019-2020</span>
+          </div>
+        </div>
+      </footer>
+      <!-- End of Footer -->
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+  </div>
+  <!-- End of Page Wrapper -->
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  </div>
+  <!-- Modal -->
+<div class="modal fade" id="Modal-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Heatmap to highlight Null values</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <code>
+            %matplotlib inline <br>
+            import matplotlib.pyplot as plt <br>
+            import pandas as pd <br>
+            import seaborn as sns <br><br>
+
+            olympics = pd.read_csv("https://abe-southside-final-project.s3.us-east-2.amazonaws.com/athlete_events.csv",index_col=[0]) <br><br>
+            sns.heatmap(olympics.isnull()) <br>
+            plt.title("Feature Statistics")
+          </code>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="Modal-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Heatmap to highlight NOT Null values</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <code>
+            %matplotlib inline <br>
+            import matplotlib.pyplot as plt <br>
+            import pandas as pd <br>
+            import seaborn as sns <br><br>
+
+            olympics = pd.read_csv("https://abe-southside-final-project.s3.us-east-2.amazonaws.com/athlete_events.csv",index_col=[0]) <br><br>
+            countries = ['USA','BRA','GER','AUS','FRA'] <br>
+            sports = ['Athletics'] <br><br>
+
+            olympics = olympics[olympics['NOC'].isin(countries)] <br>
+            olympics = olympics[olympics['Season'] == 'Summer'] <br>
+            olympics = olympics[olympics['Height'].notna()] <br>
+            olympics = olympics[olympics['Age'].notna()] <br>
+            olympics['Height (m)'] = olympics['Height']/100 <br>
+            olympics = olympics[olympics['Weight'].notna()] <br>
+            olympics['BMI'] = round(olympics['Weight']/(olympics['Height (m)']*olympics['Height (m)']),2) <br><br>
+            olympics.loc[(olympics['Medal'] == 'Gold'),'Medal']='Medal' <br>
+            olympics.loc[(olympics['Medal'] == 'Silver'),'Medal']='Medal' <br>
+            olympics.loc[(olympics['Medal'] == 'Bronze'),'Medal']='Medal' <br>
+            olympics.loc[(olympics['Medal'].isna()),'Medal']= 'Non-Medal' <br>
+
+            olympics_df = olympics[olympics['Year']< 2016] <br>
+            olympics_2016 = olympics[olympics['Year'] == 2016] <br><br>
+
+            sns.heatmap(olympics.isnull()) <br>
+            plt.title("Feature Statistics with no nulls")
+          </code>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="Modal-3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Reviewing BMI by Weight to identify correlation</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <code>
+            %matplotlib inline <br>
+            import matplotlib.pyplot as plt <br>
+            import pandas as pd <br>
+            import seaborn as sns <br><br>
+
+            olympics = pd.read_csv("https://abe-southside-final-project.s3.us-east-2.amazonaws.com/athlete_events.csv",index_col=[0]) <br><br>
+            countries = ['USA','BRA','GER','AUS','FRA'] <br>
+            sports = ['Athletics'] <br><br>
+
+            olympics = olympics[olympics['NOC'].isin(countries)] <br>
+            olympics = olympics[olympics['Season'] == 'Summer'] <br>
+            olympics = olympics[olympics['Height'].notna()] <br>
+            olympics = olympics[olympics['Age'].notna()] <br>
+            olympics['Height (m)'] = olympics['Height']/100 <br>
+            olympics = olympics[olympics['Weight'].notna()] <br>
+            olympics['BMI'] = round(olympics['Weight']/(olympics['Height (m)']*olympics['Height (m)']),2) <br><br>
+            olympics.loc[(olympics['Medal'] == 'Gold'),'Medal']='Medal' <br>
+            olympics.loc[(olympics['Medal'] == 'Silver'),'Medal']='Medal' <br>
+            olympics.loc[(olympics['Medal'] == 'Bronze'),'Medal']='Medal' <br>
+            olympics.loc[(olympics['Medal'].isna()),'Medal']= 'Non-Medal' <br>
+
+            olympics_df = olympics[olympics['Year']< 2016] <br>
+            # olympics_2016 = olympics[olympics['Year'] == 2016] <br><br>
+
+            W = olympics_df['Weight'] <br>
+            B = olympics_df['BMI'] <br><br>
+            
+            plt.scatter(B,W,c="blue") <br>
+            plt.xlabel("BMI") <br>
+            plt.ylabel("Weight") <br>
+            plt.title("BMI by Weight")
+          </code>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="Modal-4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Reviewing BMI by Height to identify correlation</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <code>
+            %matplotlib inline <br>
+            import matplotlib.pyplot as plt <br>
+            import pandas as pd <br>
+            import seaborn as sns <br><br>
+
+            olympics = pd.read_csv("https://abe-southside-final-project.s3.us-east-2.amazonaws.com/athlete_events.csv",index_col=[0]) <br><br>
+            countries = ['USA','BRA','GER','AUS','FRA'] <br>
+            sports = ['Athletics'] <br><br>
+
+            olympics = olympics[olympics['NOC'].isin(countries)] <br>
+            olympics = olympics[olympics['Season'] == 'Summer'] <br>
+            olympics = olympics[olympics['Height'].notna()] <br>
+            olympics = olympics[olympics['Age'].notna()] <br>
+            olympics['Height (m)'] = olympics['Height']/100 <br>
+            olympics = olympics[olympics['Weight'].notna()] <br>
+            olympics['BMI'] = round(olympics['Weight']/(olympics['Height (m)']*olympics['Height (m)']),2) <br><br>
+            olympics.loc[(olympics['Medal'] == 'Gold'),'Medal']='Medal' <br>
+            olympics.loc[(olympics['Medal'] == 'Silver'),'Medal']='Medal' <br>
+            olympics.loc[(olympics['Medal'] == 'Bronze'),'Medal']='Medal' <br>
+            olympics.loc[(olympics['Medal'].isna()),'Medal']= 'Non-Medal' <br>
+
+            olympics_df = olympics[olympics['Year']< 2016] <br>
+            # olympics_2016 = olympics[olympics['Year'] == 2016] <br><br>
+
+            H = olympics_df['Height (m)'] <br>
+            B = olympics_df['BMI'] <br><br>
+            
+            plt.scatter(B,H,c="red") <br>
+            plt.xlabel("BMI") <br>
+            plt.ylabel("Height (m)") <br>
+            plt.title("BMI by Height")
+          </code>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="{{ url_for('static', filename='vendor/jquery-easing/jquery.easing.min.js') }}"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="{{ url_for('static', filename='js/sb-admin-2.min.js') }}"></script>
+
+  <!-- Page level plugins -->
+  <script src="{{ url_for('static', filename='vendor/chart.js/Chart.min.js') }}"></script>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+
+  <!-- Page level custom scripts -->
+  <!-- <script src="{{ url_for('static', filename='js/demo/chart-area-demo.js') }}"></script> -->
+  <!-- <script src="{{ url_for('static', filename='js/demo/chart-pie-demo.js') }}"></script> -->
+  <!-- <script src="{{ url_for('static', filename='js/demo/chart-bar-demo.js') }}"></script> -->
+  <script src="{{ url_for('static', filename='js/demo/d3-chart-bar.js') }}"></script>
+</body>
+
+</html>
