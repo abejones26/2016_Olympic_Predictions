@@ -9,18 +9,17 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>2016 Olympic Predictions</title>
+  <title>2016 Olympics Predictions</title>
 
   <!-- Custom fonts for this template-->
 
-  <link href="static/vendor/fontawesome-free/css/all.min.css" rel="stylesheet"
-    type="text/css">
+  <link href="static/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link
     href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
     rel="stylesheet">
 
   <!-- Custom styles for this template-->
-  <link href="static/css/sb-admin-2.min.css" rel="stylesheet">
+  <link href="static/css/sb-admin-2.css" rel="stylesheet">
 
 </head>
 
@@ -34,10 +33,8 @@
       <!-- Main Content -->
       <div id="content">
         <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
-          <a class="navbar-brand" href="/">2016 Olympic Predictions - Who will win a medal?</a>
-          <span class="navbar-text float-right">
-            Team Southsiders: Tanisha Blakely, Jimmy Heinz III, Abe Jones, Dharti Patel, Alap Raval
-          </span>
+          <a class="navbar-brand" href="/">2016 Olympics Predictions - Who will win a medal?</a>
+
         </nav>
         <!-- End of Topbar -->
 
@@ -52,21 +49,45 @@
               <!-- Approach -->
               <div class="card shadow mb-4">
                 <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">Project Overview</h6>
+                  <h5 class="m-0 font-weight-bold text-primary">Project Overview</h5>
                 </div>
                 <div class="card-body">
-                  <p>Based on athlete data from the Olympic games between 1896-2014, we created a machine learning model
+                  <p class="card-text">Based on athlete data from the Olympic games between 1896-2014, we created a
+                    machine learning model
                     to predict who would win a medal in the RIO 2016 Olympic Games.</p>
+                  <div class="row">
+                    <div class="col-lg-8">
+                      <h6 class="card-title text-primary">Tech Stack</h6>
+                      <ul>
+                        <li>Scikit-Learn library for creating ML model for our prediction.</ol>
+                        <li>Amazon AWS S3 to host our Olympic athlete's dataset from Kaggle.</ol>
+                        <li>Python Pandas and Matplotlib libraries for data manipulation and ploting.</ol>
+                        <li>HTML/CSS/Bootstrap for creating web page with our visualizations.</ol>
+                      </ul>
 
-                  <p>We are using Amazon Web Services S3 to host our Olympic athlete's dataset from Kaggle.</p>
+                      <h6 class="card-title text-primary">Data Source</h6>
 
-                  <p><b>Data Source:</b><br>
-                    <a
-                      href="https://www.kaggle.com/pavanraj159/olympics-history-1896-2016/data" target="_blank">https://www.kaggle.com/pavanraj159/olympics-history-1896-2016/data</a><br>
-                    <a
-                      href="https://abe-southside-final-project.s3.us-east-2.amazonaws.com/athlete_events.csv">https://abe-southside-final-project.s3.us-east-2.amazonaws.com/athlete_events.csv</a>
+                      <ul>
+                        <li><a href="https://www.kaggle.com/pavanraj159/olympics-history-1896-2016/data"
+                            target="_blank">https://www.kaggle.com/pavanraj159/olympics-history-1896-2016/data</a></li>
+                        <li><a
+                            href="https://abe-southside-final-project.s3.us-east-2.amazonaws.com/athlete_events.csv">https://abe-southside-final-project.s3.us-east-2.amazonaws.com/athlete_events.csv</a>
+                        </li>
+                      </ul>
+                      <h6 class="card-title text-primary">Team Southsiders</h6>
+                      <ul>
+                        <li>Tanisha Blakely</li>
+                        <li>Jimmy Heinz III</li>
+                        <li>Abe Jones</li>
+                        <li>Dharti Patel</li>
+                        <li>Alap Raval</li>
+                      </ul>
+                    </div>
 
-                  </p>
+                    <div class="col-lg-4">
+                      <img class="img-thumbnail rounded mx-auto d-block" src="static/img/LR_Crosstab_heatmap.jpg" alt="Stock Performance">
+                    </div>
+                  </div>
                 </div>
               </div>
 
