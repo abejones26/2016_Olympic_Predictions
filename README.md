@@ -7,7 +7,7 @@ We are using Amazon Web Services S3 to host our Olympic athlete's dataset from K
 
 # Website: 
 Get an overview of project scope and visual
-URL: https://abejones26.github.io/final-project/
+URL: https://abejones26.github.io/2016_Olympic_Predictions/
 
 # Project Contributors:
 
